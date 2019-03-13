@@ -67,7 +67,7 @@
 
 @mixin atLarge {
 
-  &--b-margin-until-large {
+  &--b-margin-until-Large {
     margin-bottom: 0;
   }
 
