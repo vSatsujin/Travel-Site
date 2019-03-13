@@ -579,7 +579,6 @@ a {
 .wrapper--no-padding-until-medium {
     padding-left: 0;
     padding-right: 0;
-
   }
 
 @media (min-width: 800px) {
@@ -587,7 +586,19 @@ a {
 .wrapper--no-padding-until-medium {
       padding-left: 18px;
       padding-right: 18px
+  }
+  }
 
+.wrapper--no-padding-until-Large {
+        padding-left: 0;
+        padding-right: 0;
+  }
+
+@media (min-width: 1010px) {
+
+.wrapper--no-padding-until-Large {
+        padding-left: 18px;
+        padding-right: 18px
   }
   }
 
@@ -631,6 +642,17 @@ margin-bottom: 1rem;
 }
   }
 
+.page-section--no-b-padding-until-Large {
+  padding-bottom: 0;
+}
+
+@media (min-width: 1010px) {
+
+.page-section--no-b-padding-until-Large {
+    padding-bottom: 4.5rem
+}
+  }
+
 .page-section--blue {
   background-color: #2f5572;
   color: #FFF;
@@ -640,7 +662,7 @@ margin-bottom: 1rem;
 background-color: #e0e6ef;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1010px) {
 
 .page-section--testimonial {
     background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
@@ -770,6 +792,36 @@ background-color: #e0e6ef;
   }
   }
 
+@media (min-width: 1010px) {
+
+  .row--b-margin-until-large {
+    margin-bottom: 0;
+  }
+
+  .row__Large-4 {
+    float: left;
+    width: 33.33%;
+  }
+
+  .row__Large-4--larger {
+    width: 37%;
+  }
+
+  .row__Large-6 {
+    float: left;
+    width: 50%
+  }
+
+  .row__Large-8 {
+    float: left;
+    width: 66.66%;
+  }
+
+  .row__Large-8--smaller {
+    width: 63%;
+  }
+  }
+
 /*begin equal height rules */
 
 @media (min-width: 800px) {
@@ -782,6 +834,22 @@ background-color: #e0e6ef;
   }
 
 .row--equal-height-at-medium > div {
+    float: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+@media (min-width: 1010px) {
+
+.row--equal-height-at-Large {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex
+}
+  }
+
+.row--equal-height-at-Large > div {
     float: none;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -893,7 +961,7 @@ font-weight: 700;
   margin-bottom: 98px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1010px) {
 
 .testimonial {
     margin-bottom: 0;
